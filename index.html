@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Math+ | Matemática pode ser mais fácil</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+</head>
+
+<body data-page="home">
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+        <h1 class="logo">
+            <a href="index.html" title="Math+ - Plataforma de Estudos Online">
+                <img src="img/logo/logo.png" alt="Math+ - Plataforma de Estudos Online">
+            </a>
+        </h1>
+
+        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false"
+            aria-controls="menu-principal">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="nav-center" id="menu-principal" aria-label="Menu principal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="conteudos.html">Conteúdos</a></li>
+                <li><a href="ods4.html">ODS's</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-right" aria-label="Ações rápidas">
+            <ul>
+                <li><a href="/doc/Math+ apresentação.pdf" class="btn btn-filled btn-lg">Explorar</a></li>
+                <li><a href="contato.html" class="btn btn-outline btn-lg">Contato</a></li>
+                <li>
+                    <a href="forms/login.html" class="btn btn-filled btn-icon" data-logout title="Sair da conta"
+                        aria-label="Sair da conta">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="container hero-inner">
+
+                <div class="badge">
+
+                    <span class="dot"></span>
+
+                    ODS 4 — Educação de Qualidade · Agenda 2030
+
+                </div>
+
+                <h1>
+                    Matemática<br>
+                    pode ser mais
+                    <span>fácil.</span>
+                </h1>
+
+                <p class="lead">
+                    Aprenda, pratique e evolua com uma plataforma criada
+                    para tornar a matemática mais simples, interativa
+                    e acessível.
+                </p>
+
+                <div class="actions">
+
+                    <a href="conteudos.html" class="btn btn-filled">
+                        Começar a aprender →
+                    </a>
+
+                    <a href="ods4.html" class="btn btn-outline">
+                        ◎ Conhecer a ODS 4
+                    </a>
+
+                </div>
+
+
+                <!-- ESTATÍSTICAS -->
+
+                <div class="stats">
+
+                    <div>
+                        <div class="stat-n" id="qtd-modulos">4</div>
+                        <div class="stat-t">módulos</div>
+                        <div class="stat-d">de conteúdo</div>
+                    </div>
+
+                    <div>
+                        <div class="stat-n" id="qtd-questoes">40+</div>
+                        <div class="stat-t">questões</div>
+                        <div class="stat-d">no banco de quiz</div>
+                    </div>
+
+                    <div>
+                        <div class="stat-n">100%</div>
+                        <div class="stat-t">gratuito</div>
+                        <div class="stat-d">
+                            sem anúncios
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <div class="divider"></div>
+
+        <!-- ================= PROGRESSO ================= -->
+
+        <section class="section bg">
+
+            <div class="container">
+
+
+                <div>
+
+                    <span class="label">
+                        Sistema de progresso
+                    </span>
+                    <!-- NÍVEL -->
+
+                    <div>
+
+                        <div class="level-box">
+
+                            <div class="level-top">
+
+                                <div>
+
+                                    <small class="uppercase">
+                                        Seu nível atual
+                                    </small>
+
+                                    <h3 class="level-title">
+                                        Nível <span id="current-level-span">0</span>
+                                    </h3>
+
+                                    <p class="muted">
+                                        Explorador Matemático
+                                    </p>
+
+                                </div>
+
+                                <div class="level-number" id="current-level">
+                                    0
+                                </div>
+
+                            </div>
+
+
+                            <div class="progress-info level-progress">
+
+                                <span>
+                                    XP para o Nível <span id="next-level">0</span>
+                                </span>
+
+                                <strong class="primary-text">
+                                    <span id="xp-do-nivel">0</span> / 1000
+                                </strong>
+
+                            </div>
+
+                            <div class="progress-line">
+                                <span id="nivel-progress" style="width:72.5%;" class="primary-bg">
+                                </span>
+                            </div>
+
+
+                            <div class="level-stats">
+
+                                <div>
+                                    <strong id="xp-total">0</strong>
+                                    <small>XP total</small>
+                                </div>
+
+                                <div>
+                                    <strong id="qtd-modulos-concluidos">0</strong>
+                                    <small>módulos concluídos</small>
+                                </div>
+
+                                <div>
+                                    <strong id="qtd-questoes-concluidas">0</strong>
+                                    <small>questões concluídas</small>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="next-challenge">
+
+                            <div>
+
+                                <small>
+                                    Próximo desafio
+                                </small>
+
+                                <strong id="next-etapa">
+                                    
+                                </strong>
+
+                            </div>
+
+                            <a href="quiz.html" id="next-etapa-link" class="btn btn-light-outline btn-sm">
+                                Iniciar →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+        </section>
+
+
+        <!-- ================= MÓDULOS ================= -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-head">
+
+                    <div>
+
+                        <span class="label">
+                            Módulos
+                        </span>
+
+                        <h2>
+                            Por onde você<br>
+                            quer começar?
+                        </h2>
+
+                    </div>
+
+                    <a href="conteudos.html" class="btn btn-outline btn-sm">
+                        Ver todos os conteúdos
+                    </a>
+
+                </div>
+
+
+                <div class="cards" id="lista-modulos">
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="topics-section">
+
+            <span class="label">
+                Todos os tópicos
+            </span>
+
+
+            <div class="topics">
+
+
+                <a href="aula.html" class="topic">
+                    <span class="topic-dot purple-bg"></span>
+                    Adição e subtração
+                </a>
+
+                <a href="aula.html" class="topic">
+                    <span class="topic-dot purple-bg"></span>
+                    Multiplicação e divisão
+                </a>
+
+                <a href="aula.html" class="topic">
+                    <span class="topic-dot purple-bg"></span>
+                    Frações
+                </a>
+
+                <a href="aula.html" class="topic">
+                    <span class="topic-dot purple-bg"></span>
+                    Decimais
+                </a>
+
+                <a href="aula.html" class="topic">
+                    <span class="topic-dot purple-bg"></span>
+                    Potenciação
+                </a>
+
+
+                <a href="aula.html" class="topic">
+                    <span class="topic-dot cyan-bg"></span>
+                    Conceito de porcentagem
+                </a>
+
+                <a href="aula.html" class="topic">
+                    <span class="topic-dot cyan-bg"></span>
+                    Cálculo de desconto
+                </a>
+
+                <a href="aula.html" class="topic">
+                    <span class="topic-dot cyan-bg"></span>
+                    Juros simples
+                </a>
+
+                <a href="aula.html" class="topic">
+                    <span class="topic-dot cyan-bg"></span>
+                    Juros compostos
+                </a>
+
+                <a href="aula.html" class="topic">
+                    <span class="topic-dot cyan-bg"></span>
+                    Aplicações financeiras
+                </a>
+
+
+                <a href="aula.html" class="topic">
+                    <span class="topic-dot orange-bg"></span>
+                    Ângulos e retas
+                </a>
+
+                <a href="aula.html" class="topic">
+                    <span class="topic-dot orange-bg"></span>
+                    Triângulos e quadriláteros
+                </a>
+
+                <a href="aula.html" class="topic">
+                    <span class="topic-dot orange-bg"></span>
+                    Círculo
+                </a>
+
+                <a href="aula.html" class="topic">
+                    <span class="topic-dot orange-bg"></span>
+                    Área e perímetro
+                </a>
+
+                <a href="aula.html" class="topic">
+                    <span class="topic-dot orange-bg"></span>
+                    Volume de sólidos
+                </a>
+
+
+                <a href="aula.html" class="topic">
+                    <span class="topic-dot violet-bg"></span>
+                    Média aritmética
+                </a>
+
+                <a href="aula.html" class="topic">
+                    <span class="topic-dot violet-bg"></span>
+                    Mediana e moda
+                </a>
+
+                <a href="aula.html" class="topic">
+                    <span class="topic-dot violet-bg"></span>
+                    Desvio padrão
+                </a>
+
+                <a href="aula.html" class="topic">
+                    <span class="topic-dot violet-bg"></span>
+                    Gráficos e tabelas
+                </a>
+
+                <a href="aula.html" class="topic">
+                    <span class="topic-dot violet-bg"></span>
+                    Probabilidade
+                </a>
+
+            </div>
+
+        </div>
+
+        </div>
+
+        </section>
+
+
+        <div class="divider"></div>
+
+        <!-- ================= CTA ================= -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="cta">
+
+                    <div>
+
+                        <h2>
+                            Pronto para começar?
+                        </h2>
+
+                        <p>
+                            Acesse todos os módulos gratuitamente
+                            e acompanhe sua evolução em tempo real.
+                        </p>
+
+                    </div>
+
+                    <div class="actions">
+
+                        <a href="conteudos.html" class="btn btn-filled btn-lg">
+                            Ver conteúdos
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-inner">
+
+            <div class="footer-grid">
+
+                <div>
+
+                    <div class="footer-logo">
+                        <span class="logo-mark">+</span>
+                        Math<span>+</span>
+                    </div>
+
+                    <p>
+                        Plataforma de educação matemática
+                        gratuita e acessível, alinhada à ODS 4 & ODS 9
+                        da Agenda 2030 da ONU.
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <p class="footer-title">
+                        Plataforma
+                    </p>
+
+                    <div class="footer-links">
+
+                        <a href="index.html">Início</a>
+                        <a href="conteudos.html">Conteúdos</a>
+                        <a href="contato.html">Contato</a>
+
+                    </div>
+
+                </div>
+
+
+                <div>
+
+                    <p class="footer-title">
+                        Sobre
+                    </p>
+
+                    <div class="footer-links">
+
+                        <a href="ods4.html">
+                            ODS's
+                        </a>
+
+                        <a href="aula.html">
+                            Aula de Matemática
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <span>
+                    © 2026 Math+
+                </span>
+
+                <span>
+                    Alinhado às ODS 4 & 9 — Educação de Qualidade & Industria Inovação e Infraestrutura
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+    <script type="module" src="scripts/verificar-login.js"></script>
+    <script type="module" src="scripts/logout.js"></script>
+    <script type="module" src="scripts/hero.js"></script>
+    <script src="scripts/menu.js"></script>
+</body>
+
+</html>
